@@ -2065,6 +2065,8 @@ void draw_bars(bool unhide) {
                         border_color = colors.focus_ws_border;
                     }
                 }
+                // gavine - remove this stupid urgent shit
+		/*
                 if (ws_walk->urgent) {
                     DLOG("WS %s is urgent!\n", i3string_as_utf8(ws_walk->name));
                     fg_color = colors.urgent_ws_fg;
@@ -2072,6 +2074,7 @@ void draw_bars(bool unhide) {
                     border_color = colors.urgent_ws_border;
                     unhide = true;
                 }
+		*/
 
                 int w = predict_button_width(ws_walk->name_width);
                 draw_button(&(outputs_walk->buffer), fg_color, bg_color, border_color,
